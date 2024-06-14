@@ -52,7 +52,7 @@ runs:
       shell: bash
       run: set-cross-compile.sh ${{ inputs.target }}
     - name: Install toolchain
-      uses: dtolnay/rust-toolchain@master
+      uses: telia-actions/rust-toolchain@master
       with:
         targets: ${{ inputs.target }}
         toolchain: ${{ inputs.toolchain }}
